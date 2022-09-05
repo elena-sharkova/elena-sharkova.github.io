@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+  padding-bottom: 3%;
+}
+
+.header {
+  background-color: #EEF2E6;
+  text-align:center;
+}
+
+.header-nav {
+  display: flex;
+justify-content: flex-end;
+
+}
+
+.header-link {
+  padding: 0.5rem;
+}
