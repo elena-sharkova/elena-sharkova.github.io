@@ -1,3 +1,4 @@
+/*Remove default styling and use grid to position footer*/
 body {
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ h2 {
   background-color: #f1f5f9;
   text-align: center;
 }
-
+/*Use flexbox to position the navbar in the top right corner*/
 .header-nav {
   display: flex;
   justify-content: flex-end;
@@ -42,7 +43,7 @@ ul {
 li {
   display: inline;
 }
-
+/*Remove default link styling*/
 a,
 a:visited {
   color: black;
@@ -56,6 +57,7 @@ a:visited {
   cursor: pointer;
 }
 
+/*Use flexbox to style blog cards*/
 .blog-preview-card,
 .blog-readmore-card {
   display: flex;
@@ -69,7 +71,7 @@ a:visited {
   width: 200px;
   border-radius: 50%;
 }
-
+/*Use flexbox to position the blog cards*/
 .blog-preview-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +95,7 @@ a:visited {
 .footer-ul {
   padding: 0;
 }
-
+/*Media queries for smartphones and tablets*/
 @media only screen and (max-width: 768px) {
   .blog-preview-card,
   .blog-readmore-card {
