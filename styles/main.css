@@ -91,3 +91,32 @@ a, a:visited {
 background: #e8eaed;
 }
 
+.footer-ul {
+  padding:0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .blog-preview-card, .blog-readmore-card {
+    flex: 0 0 50%;
+  }
+  
+  .header-link {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+
+  .blog-preview-card, .blog-readmore-card {
+    flex: 0 0 100%;
+  }
+  
+  .header-link {
+    font-size: 0.75rem;
+  }
+
+}
+
