@@ -21,19 +21,19 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="images/apple-touch-icon.png"
+      href="../images/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicon-16x16.png"
+      href="../images/favicon-16x16.png"
     />
     <link rel="manifest" href="images/site.webmanifest" />
     <title>Best practices: classes vs IDs</title>
@@ -56,12 +56,39 @@
           </li>
         </ul>
       </nav>
-      <h1>CSS best practices:</h1>
-      <h2>classes vs IDs</h2>
+      <h1 class="header-title">CSS best practices:</h1>
+      <h2 class="header-subtitle">classes vs IDs</h2>
     </header>
     <main>
-      <article>
+      <article class="blog-entry">
+          <h2>How to create and use our selectors</h2>
+          <p class="blog-text">Classes and IDs are the HTML attributes that we can assign to any of the HTML elements. The main difference between them is that ID is unique. Imagine a group of school kids having lunch in a group. They are all bunched together in a "class" while everyone is, naturally, unique and their own person. Now, let's remind ourselves how to create our classes and IDs in HTML.</p>
+          <pre>
+            <code>
+&lt;li class="test-class"&gt;&lt;/li&gt;
+&lt;p id="test-id"&gt;&lt;/p&gt;
+            </code>
+          </pre>
+            <p class="blog-text">
+              And this is how we refer to our selectors in CSS.
+            </p>
+        <pre>
+          <code>
+#test-id {
+  text-align: center;
+}
 
+.test-class {
+  font-size: 1rem;
+}
+          </code>
+        </pre>
+     
+      
+          <h2>In favour of classes</h2>
+          <p class="blog-text">Currently, the general consensus is to prioritise using classes over IDs. There are several reasons behind this, with <a class="blog-glossary" href="https://css-tricks.com/specifics-on-css-specificity/">specificity</a> being the number one. When applying CSS it's easiest to use the least specific selectors when possible. IDs being the most specific (with an exception of inline styling which is not considered to be a best practice) are harder to control. No amount of class styles will ever override an ID's styling. </p>
+          <p class="blog-text">Vivamus vitae dignissim diam. Fusce massa erat, ullamcorper nec nisi nec, finibus dictum libero. Phasellus elit lacus, sagittis quis nisi posuere, placerat malesuada erat. Integer eu condimentum dolor. Ut id interdum nunc, in dictum ipsum. Ut non lectus lectus. Nunc vel iaculis sapien. Duis in convallis augue. Curabitur vel risus id erat fermentum placerat. Praesent aliquet pellentesque lacus, vitae volutpat justo imperdiet vel. Ut non posuere purus, vitae venenatis enim. Cras vel nisl a dolor commodo tristique. Ut id odio lacus. Curabitur eu feugiat sem. Suspendisse suscipit tellus leo, vitae convallis nunc porta et.</p>
+          <h2>In favour of IDs</h2>
       </article>
     </main>
     <footer class="footer">
