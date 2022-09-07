@@ -1,0 +1,154 @@
+/*Add CSS variables*/
+:root {
+  --lightblue: #f1f5f9;
+  --grey: #e8eaed;
+  --black: #000000;
+  --aquamarine: #00a0c6;
+}
+
+/*Remove default styling and use grid to position footer*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  display: grid; // Line 1
+  grid-template-rows: auto 1fr auto; // Line 2
+  min-height: 100vh;
+}
+
+.header-title {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.header-subtitle {
+  padding-bottom: 4%;
+}
+
+.header {
+  background-color: var(--lightblue);
+  text-align: center;
+}
+/*Use flexbox to position the navbar in the top right corner*/
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-link,
+.footer-link {
+  padding: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+/*Remove default link styling*/
+a,
+a:visited {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.header-link:hover,
+.footer-link:hover {
+  color: var(--aquamarine);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Use flexbox to style blog cards*/
+.blog-preview-card,
+.blog-readmore-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 31%;
+  padding-bottom: 5%;
+}
+
+.preview-img {
+  width: 200px;
+  border-radius: 50%;
+}
+/*Use flexbox to position the blog cards*/
+.blog-preview-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+
+.blog-teaser {
+  width: 80%;
+}
+
+.blog-readmore-card {
+  justify-content: center;
+}
+
+.footer {
+  background: var(--grey);
+}
+
+.footer-ul {
+  padding: 0;
+}
+
+.blog-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 100%;
+  padding-top: 3%;
+  text-align: left;
+}
+
+.blog-text {
+  width: 60%;
+  font-size: 1.25rem;
+}
+
+pre code {
+  background-color: rgb(51, 51, 51);
+  display: block;
+  padding: 20px;
+  color: rgb(181, 196, 224);
+  line-height: 2;
+  
+}
+/*Media queries for smartphones and tablets*/
+@media only screen and (max-width: 768px) {
+  .blog-preview-card,
+  .blog-readmore-card {
+    flex: 0 0 50%;
+  }
+
+  .header-link {
+    font-size: 1rem;
+  }
+}
+
+.blog-glossary {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 425px) {
+  .blog-preview-card,
+  .blog-readmore-card {
+    flex: 0 0 100%;
+  }
+
+  .header-link {
+    font-size: 0.75rem;
+  }
+}
