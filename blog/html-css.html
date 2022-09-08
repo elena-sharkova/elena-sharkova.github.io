@@ -43,7 +43,7 @@
       <nav class="header-nav">
         <ul>
           <li><a class="header-link" href="../index.html">Home</a></li>
-          <li><a class="header-link" href="blog/main-blog.html">Blog</a></li>
+          <li><a class="header-link" href="../blog/main-blog.html">Blog</a></li>
           <li>
             <a class="header-link" href="https://github.com/elena-sharkova"
               >Portfolio</a
@@ -61,17 +61,24 @@
     </header>
     <main>
       <article class="blog-entry">
-          <h2>How to create and use our selectors</h2>
-          <p class="blog-text">Classes and IDs are the HTML attributes that we can assign to any of the HTML elements. The main difference between them is that ID is unique. Imagine a group of school kids having lunch. They are all bunched together in a "class" while everyone is, naturally, unique and their own person. Now, let's remind ourselves how to create our classes and IDs in HTML.</p>
-          <pre>
+        <h2>How to create and use our selectors</h2>
+        <p class="blog-text">
+          Classes and IDs are the HTML attributes that we can assign to any of
+          the HTML elements. The main difference between them is that ID is
+          unique. Imagine a group of school kids having lunch. They are all
+          bunched together in a "class" while everyone is, naturally, unique and
+          their own person. Now, let's remind ourselves how to create our
+          classes and IDs in HTML.
+        </p>
+        <pre>
             <code>
 &lt;li class="test-class"&gt;&lt;/li&gt;
 &lt;p id="test-id"&gt;&lt;/p&gt;
             </code>
           </pre>
-            <p class="blog-text">
-              And this is how we refer to our selectors in CSS.
-            </p>
+        <p class="blog-text">
+          And this is how we refer to our selectors in CSS.
+        </p>
         <pre>
           <code>
 #test-id {
@@ -83,24 +90,74 @@
 }
           </code>
         </pre>
-     
-      
-          <h2>In favour of classes</h2>
-          <p class="blog-text">Currently, the general consensus is to prioritise using classes over IDs. There are several reasons behind this, with <a class="blog-glossary" href="https://css-tricks.com/specifics-on-css-specificity/">specificity</a> being the number one. When applying CSS it is easiest to use the least specific selectors when possible. IDs being the most specific (with an exception of inline styling which is not considered to be a best practice) are harder to control. No amount of class styles will ever override an ID's styling. </p>
-          <p class="blog-text">Another reason is reusability. Yes, when you have just one particular button, it is very tempting to use an ID, but the chances are you might end up using the same button somewhere else. Classes (remember to apply good semantic naming) make styling or restyling elements much more convenient.</p>
-          <p class="blog-text">Moreover, you can stack as many classes as you want to, but can only use one ID per element. This is especially valuable when your CSS gets more complicated and when you start using CSS libraries. Note that elements can have both, an ID and class/classes.</p>
-          <h2>In favour of IDs</h2>
-          <p class="blog-text">All of the above does not mean that IDs have no place in our code. IDs bring something really unique (pun intended) to the table — they can interact with a browser. When a section has an assigned ID, we can use it as an anchor in order to "jump" right there scrolling past all of the content. An example of a website link using this technique would be:</p>
-          <p class="blog-text">https://yoursite.com.index.html#contact</p>
-          <p class="blog-text">IDs are also used by JavaScript when you need that access and manipulate that specific element on your page and not their whole class. </p>
-          <p class="blog-text">And last but not least, one of the examples of using IDs for increased accessibility is to connect labels to their respective form fields. Check out <a class="blog-glossary" href="https://www.w3.org/WAI/tutorials/forms/instructions/">Web Accessibility Initiative's instructions</a> for further reading.</p>
-          <h2>Conclusion</h2>
-          <p class="blog-text">While the convention is to try and reuse classes, IDs still provide some unique features.</p>
+
+        <h2>In favour of classes</h2>
+        <p class="blog-text">
+          Currently, the general consensus is to prioritise using classes over
+          IDs. There are several reasons behind this, with
+          <a
+            class="blog-glossary"
+            href="https://css-tricks.com/specifics-on-css-specificity/"
+            >specificity</a
+          >
+          being the number one. When applying CSS it is easiest to use the least
+          specific selectors when possible. IDs being the most specific (with an
+          exception of inline styling which is not considered to be a best
+          practice) are harder to control. No amount of class styles will ever
+          override an ID's styling.
+        </p>
+        <p class="blog-text">
+          Another reason is reusability. Yes, when you have just one particular
+          button, it is very tempting to use an ID, but the chances are you
+          might end up using the same button somewhere else. Classes (remember
+          to apply good semantic naming) make styling or restyling elements much
+          more convenient.
+        </p>
+        <p class="blog-text">
+          Moreover, you can stack as many classes as you want to, but can only
+          use one ID per element. This is especially valuable when your CSS gets
+          more complicated and when you start using CSS libraries. Note that
+          elements can have both, an ID and class/classes.
+        </p>
+        <h2>In favour of IDs</h2>
+        <p class="blog-text">
+          All of the above does not mean that IDs have no place in our code. IDs
+          bring something really unique (pun intended) to the table — they can
+          interact with a browser. When a section has an assigned ID, we can use
+          it as an anchor in order to "jump" right there scrolling past all of
+          the content. An example of a website link using this technique would
+          be:
+        </p>
+        <p class="blog-text">https://yoursite.com.index.html#contact</p>
+        <p class="blog-text">
+          IDs are also used by JavaScript when you need that access and
+          manipulate that specific element on your page and not their whole
+          class.
+        </p>
+        <p class="blog-text">
+          And last but not least, one of the examples of using IDs for increased
+          accessibility is to connect labels to their respective form fields.
+          Check out
+          <a
+            class="blog-glossary"
+            href="https://www.w3.org/WAI/tutorials/forms/instructions/"
+            >Web Accessibility Initiative's instructions</a
+          >
+          for further reading.
+        </p>
+        <h2>Conclusion</h2>
+        <p class="blog-text">
+          While the convention is to try and reuse classes, IDs still provide
+          some unique features.
+        </p>
       </article>
     </main>
     <footer class="footer">
       <nav class="footer-nav">
         <ul class="footer-ul">
+          <li>
+            <a class="footer-link" href="../index.html">Home</a>
+          </li>
           <li>
             <a class="footer-link" href="https://github.com/elena-sharkova"
               ><i class="fa-brands fa-github"></i
