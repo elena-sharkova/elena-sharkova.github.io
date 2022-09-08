@@ -88,13 +88,15 @@ a:visited {
   padding-top: 5%;
 }
 
-.blog-teaser {
-  width: 80%;
-}
 
 .blog-readmore-card {
   justify-content: center;
 }
+
+.teaser-readmore {
+  font-weight: bold;
+}
+
 
 .footer {
   background: var(--grey);
@@ -109,12 +111,12 @@ a:visited {
   flex-direction: column;
   align-items: center;
   flex: 0 0 100%;
-  padding-top: 3%;
+  padding: 3% 0%;
   text-align: left;
 }
 
 .blog-text {
-  width: 60%;
+  width: 80%;
   font-size: 1.25rem;
 }
 
@@ -124,8 +126,12 @@ pre code {
   padding: 20px;
   color: rgb(181, 196, 224);
   line-height: 2;
-  
 }
+
+.blog-glossary {
+  text-decoration: underline;
+}
+
 /*Media queries for smartphones and tablets*/
 @media only screen and (max-width: 768px) {
   .blog-preview-card,
@@ -138,9 +144,7 @@ pre code {
   }
 }
 
-.blog-glossary {
-  text-decoration: underline;
-}
+
 
 @media only screen and (max-width: 425px) {
   .blog-preview-card,
