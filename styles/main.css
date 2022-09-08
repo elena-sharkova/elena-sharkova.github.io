@@ -113,11 +113,16 @@ a:visited {
   flex: 0 0 100%;
   padding: 3% 0%;
   text-align: left;
+ 
+}
+
+.blog-header {
+  text-align: center;
 }
 
 .blog-text {
-  width: 80%;
   font-size: 1.25rem;
+  width: 80%;
 }
 
 pre code {
@@ -135,24 +140,33 @@ pre code {
 /*Media queries for smartphones and tablets*/
 @media only screen and (max-width: 768px) {
   .blog-preview-card,
-  .blog-readmore-card {
+  .blog-readmore-card,
+  .blog-entry
+   {
     flex: 0 0 50%;
   }
 
-  .header-link {
+  .header-link, .footer-link {
     font-size: 1rem;
   }
+
 }
 
 
 
 @media only screen and (max-width: 425px) {
+
   .blog-preview-card,
-  .blog-readmore-card {
+  .blog-readmore-card,
+  
+  
+  {
     flex: 0 0 100%;
   }
 
-  .header-link {
+  .header-link, .footer-link {
     font-size: 0.75rem;
   }
+  
+  
 }
