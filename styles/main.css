@@ -125,6 +125,10 @@ a:visited {
   width: 80%;
 }
 
+.reflection-prompt {
+  font-weight: bold;
+}
+
 pre code {
   background-color: rgb(51, 51, 51);
   display: block;
