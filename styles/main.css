@@ -77,6 +77,8 @@ a:visited {
 
 .preview-img {
   width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 50%;
 }
 /*Use flexbox to position the blog cards*/
