@@ -150,10 +150,11 @@ pre code {
   padding: 1%;
 }
 
-.wrapper {
+.alien-wrapper {
   display:flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
+  align-items:center;
+  
 }
 
 span {
