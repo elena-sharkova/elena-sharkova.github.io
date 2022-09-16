@@ -150,6 +150,11 @@ pre code {
   padding: 1%;
 }
 
+.wrapper {
+  display:flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 
 /*Media queries for smartphones and tablets*/
 @media only screen and (max-width: 768px) {
