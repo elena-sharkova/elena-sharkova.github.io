@@ -167,6 +167,17 @@ figcaption {
   color:rgb(51, 51, 51)
 }
 
+.underline-span {
+  color:black;
+  text-decoration: underline;
+}
+
+.screenplay-wrapper {
+  display:flex;
+  justify-content: center;
+  padding: 3%;
+}
+
 /*Media queries for smartphones and tablets*/
 @media only screen and (max-width: 768px) {
   .blog-preview-card,
