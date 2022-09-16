@@ -1,5 +1,5 @@
 article.scrippet {
-	width: 400px;
+	
 	background: #fffffc;
 	color: #000000;
 	border: 1px solid #333;
@@ -9,7 +9,7 @@ article.scrippet {
 }
 
 .scrippet p {
-	font: 12px/14px Courier, "Courier New", monospace !important;
+	font: 1rem/1.25rem Courier, "Courier New", monospace !important;
     text-align: left !important;
 	letter-spacing: 0 !important;
 	margin-top: 0px !important;
@@ -24,8 +24,8 @@ article.scrippet {
 
 .action {
 	padding-right: 5% !important;
-	font-size: 12px !important;
-	line-height: 14px !important;
+	font-size: 1rem !important;
+	line-height: 1.25rem !important;
 }
 
 
@@ -52,4 +52,3 @@ article.scrippet {
 	padding-left: 65% !important;
 	padding-bottom: 1.5ex !important;
 }
-
