@@ -143,6 +143,14 @@ pre code {
   text-decoration: underline;
 }
 
+
+.instructions-item {
+  display: block;
+  font-size: 1.25rem;
+  padding: 1%;
+}
+
+
 /*Media queries for smartphones and tablets*/
 @media only screen and (max-width: 768px) {
   .blog-preview-card,
