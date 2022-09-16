@@ -1,93 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/970a5255a8.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/site.webmanifest" />
-    <title>JavaScript and DOM</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header-nav">
-        <ul>
-          <li><a class="header-link" href="../index.html">Home</a></li>
-          <li><a class="header-link" href="../blog/main-blog.html">Blog</a></li>
-          <li>
-            <a class="header-link" href="https://github.com/elena-sharkova"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a class="header-link" href="mailto:elenasharkov@gmail.com"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="header-title">Tech:</h1>
-      <h2 class="header-subtitle">JavaScript and DOM</h2>
-    </header>
-    <main>
-      <article class="blog-entry">  
-        <p class="blog-text reflection-prompt">
-          JavaScript and its relationship to HTML and CSS... for humans
-        </p>
-        <p class="blog-text">
-          When creating websites, we're using three major components: HTML (a markup language), CSS (a styling language), and an
-          actual programming language, JavaScript. One way to describe the relationship between this iconic trio is to compare
-          it to the human body.
-        <p class="blog-text">HTML is responsible for the overall structure and content of a website. It provides our imaginary
-          body with all of the bones, working organs and limbs. For now, the body is alive but not yet moving or speaking.
-        </p>
-        <p class="blog-text">CSS makes the websites pretty and positions elements according to the designer's preference. This
-          is similar to choosing suitable clothes, a certain colour of nail polish and adding a pair of earrings. </p>
-        <p class="blog-text">Finally, JavaScript makes the page interactive and brigs them to life. In terms of the body
-          analogy, JavaScript provides us with functionality – at this point we can communicate and move. </p>
-        </p>    
-        <p class="blog-text reflection-prompt">
-          Control flow and loops... for alien forms
-        </p>
-        <p class="blog-text">
-          Control flow is how a program is executed, and normally it reads top to bottom. Imagine any everyday action you don't
-          think twice about — going to the store, picking out an outfit for the day, walking your dog. If you had to explain
-          this process to a friendly alien, you would pause and then, hopefully, come up with a set of step-by-step detailed
-          instructions. Here's some "code" to help our imaginary friend with a nice cuppa:
-        </p>
-        <div class="wrapper">
-          <div class="codeblock">
-            <pre>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/970a5255a8.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+  <link rel="manifest" href="images/site.webmanifest" />
+  <title>JavaScript and DOM</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <ul>
+        <li><a class="header-link" href="../index.html">Home</a></li>
+        <li><a class="header-link" href="../blog/main-blog.html">Blog</a></li>
+        <li>
+          <a class="header-link" href="https://github.com/elena-sharkova">Portfolio</a>
+        </li>
+        <li>
+          <a class="header-link" href="mailto:elenasharkov@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="header-title">Tech:</h1>
+    <h2 class="header-subtitle">JavaScript and DOM</h2>
+  </header>
+  <main>
+    <article class="blog-entry">
+      <p class="blog-text reflection-prompt">
+        JavaScript and its relationship to HTML and CSS... for humans
+      </p>
+      <p class="blog-text">
+        When creating websites, we're using three major components: HTML (a markup language), CSS (a styling language),
+        and an
+        actual programming language, JavaScript. One way to describe the relationship between this iconic trio is to
+        compare
+        it to the human body.
+      <p class="blog-text">HTML is responsible for the overall structure and content of a website. It provides our
+        imaginary
+        body with all of the bones, working organs and limbs. For now, the body is alive but not yet moving or speaking.
+      </p>
+      <p class="blog-text">CSS makes the websites pretty and positions elements according to the designer's preference.
+        This
+        is similar to choosing suitable clothes, a certain colour of nail polish and adding a pair of earrings. </p>
+      <p class="blog-text">Finally, JavaScript makes the page interactive and brigs them to life. In terms of the body
+        analogy, JavaScript provides us with functionality – at this point we can communicate and move. </p>
+      </p>
+      <p class="blog-text reflection-prompt">
+        Control flow and loops... for alien forms
+      </p>
+      <p class="blog-text">
+        Control flow is how a program is executed, and normally it reads top to bottom. Imagine any everyday action you
+        don't
+        think twice about — going to the store, picking out an outfit for the day, walking your dog. If you had to
+        explain
+        this process to a friendly alien, you would pause and then, hopefully, come up with a set of step-by-step
+        detailed
+        instructions. Here's some "code" to help our imaginary friend with a nice cuppa:
+      </p>
+      <div class="wrapper">
+        <div class="codeblock">
+          <pre>
               <code>
       function makeTea() {
           openKettle()
@@ -105,15 +92,17 @@
       } 
           </code>
           </pre>
-          </div>
-       
-        <img src="../images/alien-tea.jpg" class="preview-img alien-img" alt="drawing of a confused alien drinking tea">
         </div>
-        
-    <p class="blog-text">
-    Well, that's fine, but there are so many situations in our day to day lives when we repeat something unless something else happens. That's when loops come in. Examples? Your local supermarket has been recently renovated, and all of your favourite foods are now in all the wrong places! Take a look at this pretend while loop:
-    </p>
-    <pre>
+
+        <img src="../images/alien-tea.jpg" class="preview-img alien-img" alt="drawing of a confused alien drinking tea">
+      </div>
+
+      <p class="blog-text">
+        Well, that's fine, but there are so many situations in our day to day lives when we repeat something unless
+        something else happens. That's when loops come in. Examples? Your local supermarket has been recently renovated,
+        and all of your favourite foods are now in all the wrong places! Take a look at this pretend while loop:
+      </p>
+      <pre>
       <code>
  while (cripsInMyBasket = 0) {
     keepRunningAroundSupermarket()
@@ -121,62 +110,79 @@
   }        
       </code>
     </pre>
-    <p class="blog-text reflection-prompt">
-      Describe what the DOM is and an example of how you might interact with it
-    </p>
-    <p class="blog-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, dui eget fermentum condimentum, risus magna
-      condimentum turpis, fermentum commodo magna dolor at sapien. Duis blandit mauris vel cursus auctor. In vel ligula a
-      purus congue euismod. Duis id malesuada augue. Nam placerat, turpis ac tempor viverra, enim massa lobortis nisl, ac
-      bibendum nunc eros a magna. In maximus elit id ligula placerat iaculis. Vestibulum laoreet mi eget arcu placerat, ut
-      volutpat nisl bibendum. Sed luctus volutpat ligula, vel tincidunt velit condimentum eu.
-    </p>
-    <p class="blog-text reflection-prompt">
-      Explain the difference between accessing data from arrays and objects
-    </p>
-    <p class="blog-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, dui eget fermentum condimentum, risus magna
-      condimentum turpis, fermentum commodo magna dolor at sapien. Duis blandit mauris vel cursus auctor. In vel ligula a
-      purus congue euismod. Duis id malesuada augue. Nam placerat, turpis ac tempor viverra, enim massa lobortis nisl, ac
-      bibendum nunc eros a magna. In maximus elit id ligula placerat iaculis. Vestibulum laoreet mi eget arcu placerat, ut
-      volutpat nisl bibendum. Sed luctus volutpat ligula, vel tincidunt velit condimentum eu.
-    </p>
-    <p class="blog-text reflection-prompt">
-      Explain what functions are and why they are helpful
-    </p>
-    <p class="blog-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, dui eget fermentum condimentum, risus magna
-      condimentum turpis, fermentum commodo magna dolor at sapien. Duis blandit mauris vel cursus auctor. In vel ligula a
-      purus congue euismod. Duis id malesuada augue. Nam placerat, turpis ac tempor viverra, enim massa lobortis nisl, ac
-      bibendum nunc eros a magna. In maximus elit id ligula placerat iaculis. Vestibulum laoreet mi eget arcu placerat, ut
-      volutpat nisl bibendum. Sed luctus volutpat ligula, vel tincidunt velit condimentum eu.
-    </p>
-       
-      </article>
-    </main>
-    <footer class="footer">
-      <nav class="footer-nav">
-        <ul class="footer-ul">
-          <li>
-            <a class="footer-link" href="../index.html">Home</a>
-          </li>
-          <li>
-            <a class="footer-link" href="https://github.com/elena-sharkova"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a class="footer-link" href="https://www.instagram.com/krokotundel/"
-              ><i class="fa-brands fa-square-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a class="footer-link" href="mailto:elenasharkov@gmail.com"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+      <p class="blog-text reflection-prompt">
+        Describe what the DOM is and an example of how you might interact with it
+      </p>
+      <p class="blog-text">
+        DOM or the Document Object Model is thoughtfully created by the browser when a website is opened. It creates a
+        tree-like structure that JavaScript uses in order to communicate with HTML and try to interact with its
+        elements.
+    
+      </p>
+      <p class="blog-text">
+        
+        DOM is just like a family tree with a few differences. Tragically, each element (or a node) only has one parent,
+        but don't feel sorry for this family — children have numerous siblings and behave amazingly well and always do
+        exactly as told by their parent! And let's just say that parents are very, very prolific. They can have as many
+        children as they wish and looks like there's no birth control in the HTML kingdom.
+      </p>
+      <p class="blog-text">
+        <span>NB:</span> the root element (document) has no parent. 😢
+      </p>
+      <figure>
+        <img src="../images/html_dom.png" alt="a hand-drawn illustration of the DOM tree">
+        <figcaption>An example of the DOM tree</figcaption>
+      </figure>
+      <p class="blog-text reflection-prompt">
+        Difference between accessing data from arrays and objects
+      </p>
+      <p class="blog-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, dui eget fermentum condimentum, risus
+        magna
+        condimentum turpis, fermentum commodo magna dolor at sapien. Duis blandit mauris vel cursus auctor. In vel
+        ligula a
+        purus congue euismod. Duis id malesuada augue. Nam placerat, turpis ac tempor viverra, enim massa lobortis nisl,
+        ac
+        bibendum nunc eros a magna. In maximus elit id ligula placerat iaculis. Vestibulum laoreet mi eget arcu
+        placerat, ut
+        volutpat nisl bibendum. Sed luctus volutpat ligula, vel tincidunt velit condimentum eu.
+      </p>
+      <p class="blog-text reflection-prompt">
+        Explain what functions are and why they are helpful
+      </p>
+      <p class="blog-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, dui eget fermentum condimentum, risus
+        magna
+        condimentum turpis, fermentum commodo magna dolor at sapien. Duis blandit mauris vel cursus auctor. In vel
+        ligula a
+        purus congue euismod. Duis id malesuada augue. Nam placerat, turpis ac tempor viverra, enim massa lobortis nisl,
+        ac
+        bibendum nunc eros a magna. In maximus elit id ligula placerat iaculis. Vestibulum laoreet mi eget arcu
+        placerat, ut
+        volutpat nisl bibendum. Sed luctus volutpat ligula, vel tincidunt velit condimentum eu.
+      </p>
+
+    </article>
+  </main>
+  <footer class="footer">
+    <nav class="footer-nav">
+      <ul class="footer-ul">
+        <li>
+          <a class="footer-link" href="../index.html">Home</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://github.com/elena-sharkova"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.instagram.com/krokotundel/"><i
+              class="fa-brands fa-square-instagram"></i></a>
+        </li>
+        <li>
+          <a class="footer-link" href="mailto:elenasharkov@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
 </html>
