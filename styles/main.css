@@ -178,6 +178,10 @@ figcaption {
   padding: 3%;
 }
 
+.blog-picture {
+  width: 100%;
+}
+
 /*Media queries for smartphones and tablets*/
 @media only screen and (max-width: 768px) {
   .blog-preview-card,
